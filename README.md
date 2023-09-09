@@ -1,3 +1,9 @@
 # React + TypeScript + Vite
 
-Instalar Prettier e ESLint no VSCode
+Projeto base
+
+## Plugins no VSCode
+Necessária instalação dos seguintes plugins
+* Prettier
+* ESLint
+* EditorConfig
