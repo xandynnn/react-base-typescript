@@ -3,5 +3,5 @@ export const App = () => {
     <>
       <h1>React Typescript Base</h1>
     </>
-  )
-}
+  );
+};

@@ -5,13 +5,13 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   server: {
-    port: 3000
+    port: 3000,
   },
   preview: {
-    port: 3000
+    port: 3000,
   },
   define: {
-    "process.env": process.env,
-    global: "window",
+    'process.env': process.env,
+    global: 'window',
   },
 });
