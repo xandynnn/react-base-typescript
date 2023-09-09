@@ -12,15 +12,19 @@
     "preview": "vite preview",
     "test": "vitest",
     "test:coverage": "vitest --coverage",
-    "prepare": "husky install",
-    "lint-staged": "lint-staged"
+    "prepare": "husky install"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
-    "*.ts": [
-      "npm run lint:fix"
+    "src/**/*.ts": [
+      "npm run lint"
     ],
-    "*.tsx": [
-      "npm run lint:fix"
+    "*src/**/.tsx": [
+      "npm run lint"
     ]
   },
   "dependencies": {
