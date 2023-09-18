@@ -1,0 +1,9 @@
+{
+  "menu": [
+    {
+      "id": 0,
+      "name": "Home",
+      "url": "home"
+    }
+  ]
+}
