@@ -10,8 +10,22 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "lint:fix": "eslint . --ext ts,tsx --fix",
     "preview": "vite preview",
-    "test": "vitest",
-    "test:coverage": "vitest --coverage"
+    "test": "vitest --watch=false",
+    "test:coverage": "vitest --coverage --watch=false",
+    "prepare": "husky install"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.ts": [
+      "npm run lint"
+    ],
+    "*src/**/.tsx": [
+      "npm run lint"
+    ]
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -35,7 +49,9 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "husky": "^8.0.0",
     "jsdom": "^22.1.0",
+    "lint-staged": "^14.0.1",
     "prettier": "^3.0.3",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
