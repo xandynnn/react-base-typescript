@@ -9,6 +9,5 @@ describe('Example Component Test', () => {
     const { getByText } = render(<ExampleComponent>{title}</ExampleComponent>);
     const text = getByText(title);
     expect(text).toBeInTheDocument();
-    expect(true).toBe(false);
   });
 });
