@@ -1,5 +1,4 @@
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import { AppRoutes } from './Routes';
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import { Theme } from './Theme';
